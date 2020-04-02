@@ -4,8 +4,11 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
-  jpa:
+jpa:
     show-sql: true
+    hibernate:
+      ddl-auto: update
+
     properties:
       hibernate:
         format_sql: true
